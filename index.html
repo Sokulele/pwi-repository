@@ -5,27 +5,222 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script defer src="/_vercel/insights/script.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+    rel="stylesheet">
   <title>Wojciech Sokolowski</title>
   <meta name="description" content="High-performance HTML based website template." />
   <style>
     body {
-      font-family: "Roboto", "sans-serif";
-      font-size: 40px;
-      color: #07200c;
+      font-family: "Montserrat", "sans-serif";
+      background-color: white;
+      color: black;
+    }
+
+    h1 {
       text-align: center;
     }
 
-    * {
+    .nav {
+      background-color: #333;
+      position: sticky;
+      list-style-type: none;
       margin: 0;
+      padding: 0;
+      overflow: auto;
+    }
+
+    .nav li {
+      display: inline-block;
+
+    }
+
+    li {
+      float: right;
+      border-right: 1px solid white
+    }
+
+    li:last-child {
+      border-left: 1px solid white
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    .logo img {
+      display: block;
+      text-align: center;
+      padding: 6px 10px;
+      height: auto;
+      width: auto;
+      max-width: 35px;
+      border-right: solid white;
+    }
+
+    .logo {
+      float: left;
+    }
+
+    .active {
+      background-color: rgb(62, 77, 46);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .logo2 img {
+      margin-right: 20px;
+      max-width: 100px;
+    }
+
+    .grid-section {
+      display: grid;
+      background-color: lightblue;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .grid-section>div {
+      background-color: rgb(112, 202, 232);
+      padding: 20px;
+      text-align: center;
+    }
+
+    hr {
+      border: 2px solid black;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    hr {
+      margin-top: 20px;
+      /* Adds space before horizontal rules */
+      margin-bottom: 20px;
+      /* Adds space after horizontal rules */
+    }
+
+    .right-section,
+    .left-section {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-section {
+      gap: 40px;
+    }
+
+    .timetable {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .timetable li {
+      background-color: #f0f8ff;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .timetable li:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
 
 <body>
-  <h1>Strona Internetowa</h1>
-  <h2>Wojciech Sokolowski</h2>
-  <h3>Numer Indeksu 210938</h3>
+  <div class="header">
+    <div class="logo2"><img src="/img/Ufo.png" alt=""></div>
+    <h1>LIGA INTERKOSMICZNEJ SIATKÓWKI</h1>
+    <div class="logo2"><img src="/img/Ufo.png" alt=""></div>
+  </div>
+  <ul class=" nav">
+    <div class="logo"><img src="/img/ball1.png" alt="Logo volleyball"></div>
+    <li><a href="">Tabela</a></li>
+    <li><a href="">Zawodnicy</a></li>
+    <li><a href="">Regulamin</a></li>
+    <li><a href="">Kontakt</a></li>
+    <li class="active"><a href="">Ogólne</a></li>
+  </ul>
+
+  <div class="grid-section">
+    <div class="left-section">
+      <h2>Informacje</h2>
+      <p>Najnowsze wiadomości i aktualizacje.</p>
+      <hr>
+      <section>
+        <h3>
+          PETARDA ŁOWICZ WYGRYWA Z UKS KORABKA ŁOWICZ 3:1
+        </h3>
+        <p>
+          Mecz pomiędzy Petardą Łowicz a UKS Korabką Łowicz w siatkówce, który odbył się w Łowiczu, był pełen emocji i
+          niezapomnianych momentów. Jednym z kluczowych zawodników tego spotkania był Wojtek Sokołowski, występujący na
+          pozycji libero. Jego wyjątkowe umiejętności obronne i niezwykła intuicja na boisku pozwoliły drużynie Petardy
+          Łowicz na skuteczną grę w obronie. Sokołowski, będąc prawdziwym liderem na parkiecie, wykazał się nie tylko
+          fantastyczną grą, ale również umiejętnością motywowania kolegów z zespołu. Jego działania na boisku były
+          dowodem na to, że jest nie tylko świetnym libero, ale również szefem, który potrafił poprowadzić swoją drużynę
+          do zwycięstwa.
+        </p>
+        <hr>
+        <h3>NIEZIEMSKI MECZ ZIEMIANOW Z KOSMITAMI</h3>
+        <p>W emocjonującym meczu siatkówki, który odbył się w niezwykłej galaktycznej arenie, drużyna kosmitów zmierzyła
+          się z ziemskimi mistrzami. Kosmici, wykorzystując swoje nadnaturalne zdolności do skoków i szybkości,
+          zaskoczyli publiczność niesamowitymi akcjami. Jednak Ziemianie, dzięki swojej determinacji i niezwykłej
+          taktyce, nie dali się łatwo pokonać, wyrównując grę spektakularnymi obronami i mocnymi atakami. Mecz zakończył
+          się tie-breakiem dla Ziemian, dostarczając kibicom niezapomnianych emocji i dowodząc, że w sporcie liczy się
+          nie tylko
+          fizyczność, ale też serce do walki.</p>
+        <hr>
+        <h3>Kosmiczny Rzym!</h3>
+        <p>
+          Galaktyczni Gladiatorzy zmierzyli się z Kosmicznymi Królami w niezwykłym meczu siatkówki, który odbył się na
+          orbicie wokół Marsa. Kosmici wykazali się niesamowitą zręcznością i strategią, przewyższając ludzkie pojęcie o
+          grze. Mimo to, Gladiatorzy, dzięki swojej determinacji i niezwykłej taktyce zespołowej, zdołali utrzymać wynik
+          w napięciu do ostatnich sekund. Ostatecznie, to Kosmiczni Królowie triumfowali, zademonstrowawszy
+          umiejętności, które zdecydowanie wyznaczyły nowe granice w uniwersalnej siatkówce.
+        </p>
+      </section>
+    </div>
+    <div class="right-section">
+      <h2>Terminarz</h2>
+      <p>Kalendarz nadchodzących meczów i wydarzeń.</p>
+      <hr>
+      <ul class="timetable">
+        <li><strong>10 Marca</strong> - Gwiezdni Wojownicy vs. Kometarze</li>
+        <li><strong>17 Marca</strong> - Kosmiczni Piraci vs. Saturn Siatkarze</li>
+        <li><strong>24 Marca</strong> - Nebula Najeźdźcy vs. Galaktyczni Giganci</li>
+        <li><strong>31 Marca</strong> - Meteor Mistrzowie vs. Czarne Dziury</li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
