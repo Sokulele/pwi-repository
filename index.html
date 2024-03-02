@@ -149,12 +149,18 @@
       margin-bottom: 8px;
       padding: 10px;
       border-radius: 5px;
-      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s;
+      font-size: 16px;
     }
 
     .timetable li:hover {
       transform: scale(1.02);
+    }
+
+    .date {
+      color: #3f4151;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -217,10 +223,14 @@
       <p>Kalendarz nadchodzących meczów i wydarzeń.</p>
       <hr>
       <ul class="timetable">
-        <li><strong>10 Marca</strong> - Gwiezdni Wojownicy vs. Kometarze</li>
-        <li><strong>17 Marca</strong> - Kosmiczni Piraci vs. Saturn Siatkarze</li>
-        <li><strong>24 Marca</strong> - Nebula Najeźdźcy vs. Galaktyczni Giganci</li>
-        <li><strong>31 Marca</strong> - Meteor Mistrzowie vs. Czarne Dziury</li>
+        <li><span class="date">10 Marca</span> - Gwiezdni Wojownicy vs. Kometarze</li>
+        <li><span class="date">17 Marca</span> - Kosmiczni Piraci vs. Saturn Siatkarze</li>
+        <li><span class="date">24 Marca</span> - Nebula Najeźdźcy vs. Galaktyczni Giganci</li>
+        <li><span class="date">31 Marca</span> - Meteor Mistrzowie vs. Czarne Dziury</li>
+        <li><span class="date">10 Marca</span> - Gwiezdni Wojownicy vs. Kometarze</li>
+        <li><span class="date">17 Marca</span> - Kosmiczni Piraci vs. Saturn Siatkarze</li>
+        <li><span class="date">24 Marca</span> - Nebula Najeźdźcy vs. Galaktyczni Giganci</li>
+        <li><span class="date">31 Marca</span> - Meteor Mistrzowie vs. Czarne Dziury</li>
       </ul>
     </div>
   </div>
