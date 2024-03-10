@@ -2,78 +2,79 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wojciech Sokolowski</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="/_vercel/insights/script.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <title>Wojciech Sokolowski</title>
+  <meta name="description" content="High-performance HTML based website template." />
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Kółko i krzyżyk</h1>
+  <div class="container">
+    <h1>Kółko i krzyżyk</h1>
 
-        <div class="modeBtn">
-            <button id="playersMode">2 Players</button>
-            <button id="computerMode">vs Computer</button>
-        </div>
-
-        <div class="gameBoard playersChose" style="display: none;">
-            <h2>
-                <p>Gracz 1 X</p>
-                <p>Gracz 2 O</p>
-            </h2>
-            <div class="board">
-                <div class="row">
-                    <div class="cell" onclick="twoPMakeMove(0, 0)"></div>
-                    <div class="cell" onclick="twoPMakeMove(0, 1)"></div>
-                    <div class="cell" onclick="twoPMakeMove(0, 2)"></div>
-                </div>
-                <div class="row">
-                    <div class="cell" onclick="twoPMakeMove(1, 0)"></div>
-                    <div class="cell" onclick="twoPMakeMove(1, 1)"></div>
-                    <div class="cell" onclick="twoPMakeMove(1, 2)"></div>
-                </div>
-                <div class="row">
-                    <div class="cell" onclick="twoPMakeMove(2, 0)"></div>
-                    <div class="cell" onclick="twoPMakeMove(2, 1)"></div>
-                    <div class="cell" onclick="twoPMakeMove(2, 2)"></div>
-                </div>
-            </div>
-            <p class="text" id="playersModeWinnerText"></p>
-        </div>
-
-        <div class="gameBoard compChose" style="display: none;">
-            <h2>
-                <p>Gracz X</p>
-                <p>Komputer O</p>
-            </h2>
-            <div class="board">
-                <div class="row">
-                    <div class="cell" onclick="compMove(0, 0)"></div>
-                    <div class="cell" onclick="compMove(0, 1)"></div>
-                    <div class="cell" onclick="compMove(0, 2)"></div>
-                </div>
-                <div class="row">
-                    <div class="cell" onclick="compMove(1, 0)"></div>
-                    <div class="cell" onclick="compMove(1, 1)"></div>
-                    <div class="cell" onclick="compMove(1, 2)"></div>
-                </div>
-                <div class="row">
-                    <div class="cell" onclick="compMove(2, 0)"></div>
-                    <div class="cell" onclick="compMove(2, 1)"></div>
-                    <div class="cell" onclick="compMove(2, 2)"></div>
-                </div>
-            </div>
-            <p class="text" id="compModeText"></p>
-        </div>
-        <button id="resetBtn" onclick="resetBoard()" style="display: none;">Resetuj grę</button>
+    <div class="modeBtn">
+      <button id="playersMode">2 Players</button>
+      <button id="computerMode">vs Computer</button>
     </div>
-    <script src="./script.js"></script>
+
+    <div class="gameBoard playersChose" style="display: none;">
+      <h2>
+        <p>Gracz 1 X</p>
+        <p>Gracz 2 O</p>
+      </h2>
+      <div class="board">
+        <div class="row">
+          <div class="cell" onclick="twoPMakeMove(0, 0)"></div>
+          <div class="cell" onclick="twoPMakeMove(0, 1)"></div>
+          <div class="cell" onclick="twoPMakeMove(0, 2)"></div>
+        </div>
+        <div class="row">
+          <div class="cell" onclick="twoPMakeMove(1, 0)"></div>
+          <div class="cell" onclick="twoPMakeMove(1, 1)"></div>
+          <div class="cell" onclick="twoPMakeMove(1, 2)"></div>
+        </div>
+        <div class="row">
+          <div class="cell" onclick="twoPMakeMove(2, 0)"></div>
+          <div class="cell" onclick="twoPMakeMove(2, 1)"></div>
+          <div class="cell" onclick="twoPMakeMove(2, 2)"></div>
+        </div>
+      </div>
+      <p class="text" id="playersModeWinnerText"></p>
+    </div>
+
+    <div class="gameBoard compChose" style="display: none;">
+      <h2>
+        <p>Gracz X</p>
+        <p>Komputer O</p>
+      </h2>
+      <div class="board">
+        <div class="row">
+          <div class="cell" onclick="compMove(0, 0)"></div>
+          <div class="cell" onclick="compMove(0, 1)"></div>
+          <div class="cell" onclick="compMove(0, 2)"></div>
+        </div>
+        <div class="row">
+          <div class="cell" onclick="compMove(1, 0)"></div>
+          <div class="cell" onclick="compMove(1, 1)"></div>
+          <div class="cell" onclick="compMove(1, 2)"></div>
+        </div>
+        <div class="row">
+          <div class="cell" onclick="compMove(2, 0)"></div>
+          <div class="cell" onclick="compMove(2, 1)"></div>
+          <div class="cell" onclick="compMove(2, 2)"></div>
+        </div>
+      </div>
+      <p class="text" id="compModeText"></p>
+    </div>
+    <button id="resetBtn" onclick="resetBoard()" style="display: none;">Resetuj grę</button>
+  </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
