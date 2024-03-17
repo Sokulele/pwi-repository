@@ -69,7 +69,8 @@ function compMove(row, col) {
 			currentPlayer = currentPlayer === "X" ? "O" : "X";
 
 			if (!gameOver && currentPlayer === "O") {
-				setTimeout(compTurn, 300);
+				compTurn();
+				// setTimeout(compTurn, 300);
 			}
 		}
 	}
