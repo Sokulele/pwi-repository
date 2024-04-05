@@ -1,6 +1,19 @@
 {
-  "private": true,
-  "dependencies": {
-    "@vercel/edge": "^0.1.2"
-  }
+	"private": true,
+	"dependencies": {
+		"@vercel/edge": "^0.1.2"
+	},
+	"name": "pwi-repository",
+	"description": "---\r name: HTML Starter\r slug: html-starter-with-analytics\r description: HTML5 template with analytics and advanced routing configuration.\r deployUrl: https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/html&project-name=html\r relatedTemplates:\r   - nextjs-boilerplate\r ---",
+	"version": "1.0.0",
+	"main": "middleware.js",
+	"scripts": {
+		"build": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.4.3"
+	}
 }
